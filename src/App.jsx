@@ -1,8 +1,10 @@
 import logo from './assets/images/logo.svg';
+import { Home } from './pages/home/Home';
 
 function App() {
   return (
     <div className="app">
+    <Home />
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <p className="header">Vite React Starter 💯</p>
