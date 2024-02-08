@@ -1,20 +1,21 @@
 import React from 'react';
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll } from 'framer-motion';
 
 import { AboutMe } from './components/AboutMe';
 
 export const Home = () => {
-
-  const { scrollYProgress} = useScroll()
+  const { scrollYProgress } = useScroll();
   return (
-
     <div className="bg-white">
-      <motion.div className=' origin-[0%] bg-black fixed -top-1 left-0 h-[10px] w-full z-50' style={{ scale: scrollYProgress}} />
-      <header className="fixed z-50 flex font-extralight  w-full justify-between px-8 pt-10 text-black">
+      <motion.div
+        className=" fixed -top-1 left-0 z-50 h-[10px] w-full origin-[0%] bg-black"
+        style={{ scale: scrollYProgress }}
+      />
+      <header className="fixed z-50 flex w-full  justify-between px-8 pt-10 font-extralight text-black">
         <span>
           <a href="#"> hello </a>
         </span>
-        <span className="flex flex-col text-[20px] tracking-wide font-extralight ">
+        <span className="flex flex-col text-[20px] font-extralight tracking-wide ">
           <a className=" hover:underline" href="#">
             sobre
           </a>
