@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Rosé Pine",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 12,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.matchBrackets": "never",
+    "editor.cursorStyle": "block",
+    "IDX.aI.enableInlineCompletion": true
+  }
