@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion, useScroll } from 'framer-motion';
+import Logo from '../../assets/images/robn.png'
 
 import { AboutMe } from './components/AboutMe';
+import { LetsWork } from './components/LetsWork';
+import { Video } from './components/Video';
 
 export const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -13,7 +16,9 @@ export const Home = () => {
       />
       <header className="fixed z-50 flex w-full  justify-between px-8 pt-10 font-extralight text-black">
         <span>
-          <a href="#"> hello </a>
+          <a href="#"> 
+        <img src={Logo} className='w-[60px]' />
+         </a>
         </span>
         <span className="flex flex-col text-[20px] font-extralight tracking-wide ">
           <a className=" hover:underline" href="#">
@@ -34,8 +39,15 @@ export const Home = () => {
           </h1>
         </div>
       </div>
+      <section>
+        <Video />
+      </section>
       <div>
         <AboutMe />
+      </div>
+     
+      <div>
+        <LetsWork />
       </div>
     </div>
   );

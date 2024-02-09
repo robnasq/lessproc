@@ -9,10 +9,9 @@ export const AboutMe = () => {
       const pPosition = pRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      const pTop = pPosition.top;
       const pBottom = pPosition.bottom;
 
-      const isInView = pTop >= 0 && pBottom <= windowHeight;
+      const isInView = pBottom <= windowHeight;
 
       setIsCentered(isInView);
     };
