@@ -13,16 +13,20 @@ export const Video = () => {
       setDivWidth(newWidth)
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const desktopMediaQuery = window.matchMedia('(min-width: 768px)'); 
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    if (desktopMediaQuery.matches) {
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 
   return (
-    <div className=" bg-slate-500 h-screen flex justify-center items-center">
-      <div className="bg-white flex justify-center items-center" style={{ width: divWidth, height: divHeight,  }}>video Div</div>
+    <div className=" bg-slate-500 h-screen max-sm:h-[320px] flex justify-center items-center">
+      <div className="bg-black flex  justify-center items-center" style={{ width: divWidth, height: divHeight,  }}>video Div</div>
     </div>
   );
 };

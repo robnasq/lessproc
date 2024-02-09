@@ -27,9 +27,9 @@ export const AboutMe = () => {
     <section className="relative z-20 h-full bg-white bg-opacity-0 px-8 pb-160 pt-60">
       <div
         id="blurredComponent"
-        className={`relative ml-auto mr-auto transition-all duration-300  mt-250 flex h-screen w-full items-center justify-center sm:mt-100 ${!isCentered ? 'filter blur-[4px]' : ''}`}
+        className={`relative ml-auto mr-auto transition-all duration-300  mt-[100px] max-sm:mt-0 flex h-screen w-full items-center justify-center sm:mt-100 ${!isCentered ? 'filter blur-[4px]' : ''}`}
       >
-        <p ref={pRef} className="font-plus-jakarta-sans px-[120px] text-start text-[48px] font-extralight leading-1.[357em] tracking-wider text-black sm:text-[32px]">
+        <p ref={pRef} className="font-plus-jakarta-sans px-[120px] max-sm:px-[20px] text-start text-[30px] font-extralight  tracking-wider max-sm:tracking-normal text-black max-sm:text-[20px]">
           Olá, sou Roberto, um desenvolvedor front-end especializado em criar
           interações usando HTML, CSS e JavaScript. Trabalho em estreita
           colaboração com designers e equipes de UX/UI para transformar suas
