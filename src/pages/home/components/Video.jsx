@@ -22,7 +22,7 @@ export const Video = () => {
 
   return (
     <div className=" bg-slate-500 h-screen flex justify-center items-center">
-      <div className="bg-white flex justify-center items-center" style={{ width: divWidth, height: divHeight,  }}>Central Div</div>
+      <div className="bg-white flex justify-center items-center" style={{ width: divWidth, height: divHeight,  }}>video Div</div>
     </div>
   );
 };
