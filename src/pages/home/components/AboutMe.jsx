@@ -24,10 +24,10 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <section className="relative z-20 h-full bg-white bg-opacity-0 px-8 pb-160 pt-60">
+    <section className="relative z-20 h-full bg-white bg-opacity-0 px-8 pb-160 pt-[150px]">
       <div
         id="blurredComponent"
-        className={`relative ml-auto mr-auto transition-all duration-300  mt-[100px] max-sm:mt-0 flex h-screen w-full items-center justify-center sm:mt-100 ${!isCentered ? 'filter blur-[4px]' : ''}`}
+        className={`relative ml-auto mr-auto transition-all duration-300  max-sm:mt-0 flex h-screen w-full items-center justify-center sm:mt-100 ${!isCentered ? 'filter blur-[4px]' : ''}`}
       >
         <p ref={pRef} className="font-plus-jakarta-sans px-[120px] max-sm:px-[20px] text-start text-[30px] font-extralight  tracking-wider max-sm:tracking-normal text-black max-sm:text-[20px]">
           Olá, sou Roberto, um desenvolvedor front-end especializado em criar
