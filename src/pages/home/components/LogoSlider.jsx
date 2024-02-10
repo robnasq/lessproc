@@ -9,9 +9,12 @@ import TsLogo from '../assets/ts-logo.jpeg';
 
 export const LogoSlider = () => {
   return <div >
-    <Marquee className="mt-[140px]">
-      <div className="w-[100px] h-12 bg-slate-300 " />
-      <img src={ReactLogo} />
+    <Marquee className="mt-[110px]">
+      <img src={ReactLogo} className='w-[80px] mx-44' />
+      <img src={HtmlLogo} className='w-[80px]' />
+      <img src={JsLogo} className='w-[80px] mx-44' />
+      <img src={TawilwindLogo} className='w-[100px]' />
+      <img src={TsLogo} className='w-[80px] ml-44' />
     </Marquee>
   </div>;
 };
