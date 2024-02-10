@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div className="bg-white">
       <motion.div
-        className=" fixed -top-1 left-0 z-50 h-[10px] w-full origin-[0%] bg-black"
+        className=" fixed -top-1 left-0 z-50 h-[12px] w-full origin-[0%] bg-black"
         style={{ scale: scrollYProgress }}
       />
       <header className="fixed z-50 flex w-full justify-between  px-8 pt-10 font-extralight text-black max-sm:h-[40px]">
