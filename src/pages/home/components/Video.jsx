@@ -36,7 +36,7 @@ export const Video = () => {
           src={VideoP}
           loop
           muted
-          className="h-full max-h-[744px] max-w-[1366] w-full object-cover max-sm:h-[320px]"
+          className="h-full max-h-[744px] max-w-[1366] w-full object-cover max-sm:h-[280px]"
         ></video>
       </div>
     </div>
