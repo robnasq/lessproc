@@ -7,7 +7,7 @@ export const LetsWork = () => {
         Let's Work <br /> Together
       </div>
       <div className="flex justify-center gap-4">
-        <a className=" cursor-pointer rounded-[50px] border border-[#3a3a3a] bg-black px-[20px] py-[25px] text-center text-[#FFFFFF] text-opacity-[100%]">
+        <a className=" cursor-pointer rounded-[50px]  max-sm:text-[10px] border border-[#3a3a3a] bg-black px-[20px] py-[25px] text-center text-[#FFFFFF] text-opacity-[100%]">
           roberto.nasc93@gmail.com
         </a>
         <a className="w-[200px] rounded-[50px] cursor-pointer border border-[#3a3a3a] bg-black px-[20px] py-[25px] text-center text-[#FFFFFF] text-opacity-[100%]">
