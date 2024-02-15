@@ -3,7 +3,7 @@ import Studio from '../../../../assets/images/studio.jpg';
 import { useEffect, useState } from 'react';
 
 export const Memorizze = () => {
-  const [divWidth, setDivWidth] = useState(720);
+  const [divWidth, setDivWidth] = useState(1280);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,7 +12,7 @@ export const Memorizze = () => {
       setDivWidth(newWidth);
     };
 
-    const desktopMediaQuery = window.matchMedia('(min-width: 220px)');
+    const desktopMediaQuery = window.matchMedia('(min-width: 1280)');
 
     if (desktopMediaQuery.matches) {
       window.addEventListener('scroll', handleScroll);
@@ -26,20 +26,21 @@ export const Memorizze = () => {
   return (
     <div className="mt-[] flex flex-col px-4">
       <div className="w-full ">
-        <h2 className="mt-[130px] max-sm:text-[36px]">
+        <h2 className="mt-[130px] text-6xl  overflow-hidden max-sm:text-[36px]">
           {' '}
-          Melhorando a experiência do usuário atravez da perfomance
+          Melhorando a experiência <br /> do usuário atravez da perfomance
         </h2>
         <p className="mt-5 text-gray-600">Memorizze | Photo Maeketplace</p>
       </div>
-      <div>
+      <div className='w-full'>
         <img
           style={{ width: divWidth}}
-          className="mt-7 h-[180px]"
+          className="mt-7   md:h-[400px]  h-[180px]"
           src={Studio}
         />
       </div>
-      <div className="flex  mt-4 mb-10  justify-between">
+      <div className='md:flex  md:mt-7 md:flex-row md:justify-evenly'>
+      <div className="flex  mt-4 mb-10  md:w-[30%] justify-around">
         <span>
           <p className='font-extralight'>Nicho</p>
           <p className='text-[12px]'> Fotografia</p>
@@ -53,7 +54,7 @@ export const Memorizze = () => {
           <p className='text-[12px]'>Desenvolvimento</p>
         </span>
       </div>
-      <div>
+      <div className='md:w-[40%]'>
         <p>
           O "Memorizze" é um marketplace que conecta fotógrafos a compradores,
           oferecendo uma plataforma intuitiva com perfis personalizados para os
@@ -64,6 +65,8 @@ export const Memorizze = () => {
           Promove a arte da fotografia, unindo paixão e negócios em um só lugar.
         </p>
       </div>
+      </div>
+      
     </div>
   );
 };

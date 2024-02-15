@@ -29,7 +29,7 @@ export const Jobs = () => {
          
         />
       </div>
-      <div className='w-full flex  flex-col   justify-start  ml-14'    >   
+      <div className=' flex  flex-col  justify-start items-start ml-14'    >   
         <h2 className='font-extralight  text-[20px] text-start' >Memorizze</h2>
         <p className='text-gray-700'>Web aplication</p>
       </div>
