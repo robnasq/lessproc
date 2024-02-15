@@ -6,7 +6,7 @@ export const LetsWork = () => {
       <div className=" font-plus-jakarta-sans py-[200px] max-sm:text-[72px] max-sm:py-[100px] text-center text-[128px] font-light leading-[1em] tracking-[-0.025em] text-[#FFFFFF] text-opacity-[100%] md:text-[60px]">
         Let's Work <br /> Together
       </div>
-      <div className="flex justify-center gap-4">
+      <div className="flex  max-sm:text-[10px] justify-center gap-4">
         <a className=" cursor-pointer rounded-[50px]  max-sm:text-[10px] border border-[#3a3a3a] bg-black px-[20px] py-[25px] text-center text-[#FFFFFF] text-opacity-[100%]">
           roberto.nasc93@gmail.com
         </a>
