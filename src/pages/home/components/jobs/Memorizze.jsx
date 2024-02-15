@@ -28,7 +28,7 @@ export const Memorizze = () => {
       <div className="w-full ">
         <h2 className="mt-[130px] max-sm:text-[36px]">
           {' '}
-          Melhorando a experencia do usuraio atravez da perfomance
+          Melhorando a experencia do usuário atravez da perfomance
         </h2>
         <p className="mt-5 text-gray-600">Memorizze | Photo Maeketplace</p>
       </div>
