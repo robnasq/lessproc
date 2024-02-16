@@ -20,8 +20,7 @@ export const Memorizze = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }
-  }, [divWidth]); // Reattach listener when divWidth changes
-
+  }, [divWidth]); 
   return (
     <div className="mt-[] flex  pb-4 scroll-behavior:smooth flex-col px-4">
       <div className="w-full">
