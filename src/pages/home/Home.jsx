@@ -7,6 +7,9 @@ import { Video } from './components/Video';
 import { LogoSlider } from './components/LogoSlider';
 import { Jobs } from './components/Jobs';
 
+import Memorizze from '../../assets/images/memorizze.png'
+import Mycamp from '../../assets/images/my-camp.png'
+
 export const Home = () => {''
   const { scrollYProgress } = useScroll();
   return (
@@ -33,7 +36,9 @@ export const Home = () => {''
         <AboutMe />
       </section>
       <section id="jobs">
-        <Jobs />
+        <Jobs description={'Foto marketplace'} title={'Memorizze'} link={'/memorizze'} image={Memorizze}  />
+        <Jobs description={'Hosting Website'} title={'My Camp'} link={'/mycamp'} image={Mycamp}  />
+
       </section>
       <section id="contact">
         <LetsWork />

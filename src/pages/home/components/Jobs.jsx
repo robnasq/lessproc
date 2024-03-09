@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Memorizze from '../../../assets/images/memorizze.png';
 import { useNavigate } from 'react-router-dom';
 
-export const Jobs = () => {
+export const Jobs = ({link, image, title, description}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -12,7 +12,7 @@ export const Jobs = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate('/memorizze')
+    navigate(link)
   };
   
   return (
@@ -23,15 +23,15 @@ export const Jobs = () => {
         onMouseLeave={handleHover}
       >
         <img
-          src={Memorizze}
+          src={image}
           className={`w-[92%] h-[250px] transition duration-300 object-contain ${isHovered ? 'scale-105'   :   ''}`}
           alt='Pagina inicial de site'
          
         />
       </div>
       <div className='flex right-32 relative flex-col '>   
-        <h2 className='font-extralight  text-[20px] ' >Memorizze</h2>
-        <p className='text-gray-700'>Web aplication</p>
+        <h2 className='font-extralight  text-[20px] ' >{title}</h2>
+        <p className='text-gray-700'>{description}</p>
       </div>
 
     </div>
