@@ -9,7 +9,7 @@ export const Layout
     <div>
           <header className="fixed bg-transparent z-50 flex w-full justify-between px-8 pt-10 font-extralight text-black ">
         <span>
-          <a href="#">
+          <a href="/">
             <img src={Logo} alt="Logo" className="w-[60px] max-sm:w-[50px]" />
           </a>
         </span>

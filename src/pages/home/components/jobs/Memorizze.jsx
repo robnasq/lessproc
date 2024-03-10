@@ -7,11 +7,11 @@ export const Memorizze = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const newWidth = 1300 + scrollPosition * 0.2; 
+      const newWidth = 1280 + scrollPosition * 0.2; 
       setDivWidth(newWidth);
     };
 
-    const desktopMediaQuery = window.matchMedia('(min-width: 1280px)');
+    const desktopMediaQuery = window.matchMedia('(min-width: 800px)');
 
     if (desktopMediaQuery.matches) {
       window.addEventListener('scroll', handleScroll);
@@ -22,8 +22,8 @@ export const Memorizze = () => {
     }
   }, [divWidth]); 
   return (
-    <div className="mt-[] flex  pb-4 scroll-behavior:smooth flex-col px-4">
-      <div className="w-full">
+    <div className="flex  pb-4 scroll-behavior:smooth flex-col ">
+      <div className="w-full px-4">
         <h2 className="mt-[130px] text-6xl overflow-hidden max-sm:text-[36px]">
           Melhorando a experiência <br /> do usuário através da performance
         </h2>
@@ -37,7 +37,7 @@ export const Memorizze = () => {
           alt="Studio"
         />
       </div>
-      <div className="md:flex md:mt-7 md:flex-row md:justify-start">
+      <div className="md:flex px-4 md:mt-7 md:flex-row md:justify-start">
         <div className="flex mt-4 mb-10 md:w-[30%] justify-around">
           <span>
             <p className="font-extralight">Nicho</p>
